@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Charge de mesure page</title>
+</head>
+<body>
+<nav>
+     
+      <p> Tableau de bord </p>
+      <ul>
+        <li><a class="active" href="/saisie">Home</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Gest.Indicateur</a>
+        	<ul>
+       			 <li><a href="#">Geérer Indicateur</a></li> 
+       			 <li><a href="#">Ajouter Indicateur</a></li> 	 
+        	</ul>
+        </li>
+        <li><a href="#">Gest.user</a>
+        <ul>
+       			 <li><a href="/users">Geérer Utilisateur</a></li> 
+       			 <li><a href="/register">Ajouter Utilisateur</a></li> 	 
+        	</ul>
+        </li>
+        <li><a href="#">Gest.Axe</a></li>          
+      
+      </ul>
+      <div class="logout">
+			<form class="form-inline my-2 my-lg-0" method="POST" th:action="@{/logout}">
+				<button  type="Submit"></button>
+			</form>
+			</div>
+    </nav>
+</body>
+</html>
